@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ceaser Cipher</title>
+  </head>
+  <body>
+    <p>Enter text:</p>
+    <textarea
+      name="input"
+      id="inputText"
+      style="font-size: 20px"
+      cols="30"
+      rows="5"
+      oninput="codeMessage()"
+    ></textarea>
+    <br />
+    <input
+      type="radio"
+      name="code"
+      id="encode"
+      value="code"
+      checked="checked"
+    />
+    Encode
+    <input type="radio" name="code" id="decode" value="code" /> Decode
+    <br />
+    <br />
+    <input type="number" name="key" id="key" min="0" max="26" value="1" /> Key
+
+    <p>Output text:</p>
+    <textarea
+      name="output"
+      id="outputText"
+      style="font-size: 20px"
+      cols="30"
+      rows="5"
+    ></textarea>
+
+    <script src="index.js"></script>
+  </body>
+</html>
